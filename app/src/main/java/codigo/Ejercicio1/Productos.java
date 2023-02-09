@@ -14,7 +14,7 @@ public class Productos {
 
     public String compra(Clientes cliente){
         
-        return "Es comprado por "+cliente.name;
+        return "El producto "+name+" es comprado por "+cliente.name;
     }
 }
 

@@ -5,8 +5,8 @@ public class Tienda {
         Thread s1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                CLientes cliente = new Sucursal(new Client("Jose"));
-                sucursalA.retirarDinero(100);
+                Clientes cliente = new Clientes("jairo") ;
+                cliente.log("Entra a la tienda");
             }
         });
 
