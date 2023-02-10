@@ -111,6 +111,21 @@ public class SamsungR10 implements ITelefono {
         this.accesorios = accesorios;
     }
 
+    public void mostrarDatos(){
+        System.out.println("Tamaño: " + this.getTamano());
+        System.out.println("CPU: " + this.getCpu());
+        System.out.println("Memoria: " + this.getMemory());
+        System.out.println("Empresa Tel: " + this.getSim().getNombreEmpresaTel());
+        System.out.println("Número Tel: " + this.getSim().getNumeroTelefono());
+        System.out.println("Versión Android: " + this.getVersionAndroid());
+        System.out.println("Cámara: " + this.getCamara());
+        System.out.println("Bluetooth: " + this.getBluetooth());
+        System.out.println("Cantidad de memorias externas: " + this.getCantidadDeMemoriasExternas());
+        System.out.println("Tiempo de uso de batería: " + this.getTiempoUsoBateria());
+        System.out.println("Accesorios: " + this.getAccesorios());
+        System.out.println();
+    }
+
     @Override
     public SamsungR10 clone() {
         SamsungR10 clone = new SamsungR10();
