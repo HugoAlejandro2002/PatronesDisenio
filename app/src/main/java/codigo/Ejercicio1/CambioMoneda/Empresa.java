@@ -12,7 +12,7 @@ public class Empresa {
             tipoDeCambio = new Empresa();
         return tipoDeCambio;
     }
-    public double convertToDollar(int amount, String currency){
+    public double convertToDollar(double amount, String currency){
         if(currency == "$")
             return amount;
         if(currency == "E")
@@ -21,7 +21,7 @@ public class Empresa {
             return amount*6.96;
         return 0;
     }
-    public double convertToBoliviano(int amount, String currency){
+    public double convertToBoliviano(double amount, String currency){
         if(currency == "$")
             return amount/6.96;
         if(currency == "E")
@@ -31,13 +31,13 @@ public class Empresa {
         return 0;
 
     }
-    public double convertToEuro(int amount, String currency){
+    public double convertToEuro(double amount, String currency){
         if(currency == "$")
-            return amount*0.82;
+            return amount*0.93;
         if(currency == "E")
             return amount;
         if(currency == "bs")
-            return amount*0.12;
+            return amount*8.41;
         return 0;
 
     }
