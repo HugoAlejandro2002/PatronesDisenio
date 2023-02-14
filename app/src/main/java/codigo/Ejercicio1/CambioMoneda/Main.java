@@ -10,8 +10,11 @@ public class Main {
             public void run() {
                 LibreCambista librecambista = new LibreCambista();
                 System.out.println("Converting 23 bs into" + librecambista.exchangeBolivianos(10, "$"));
+                librecambista.depositarDinero(librecambista.exchangeBolivianos(10, "$"));
                 System.out.println("Converting 23 bs into" + librecambista.exchangeDollars(70, "bs"));
+                librecambista.depositarDinero(librecambista.exchangeDollars(70, "bs"));
                 System.out.println("Converting 23 bs into" + librecambista.exchangeEuros(1, "bs"));
+                librecambista.depositarDinero(librecambista.exchangeEuros(1, "bs"));
             }
         });
 
@@ -20,8 +23,11 @@ public class Main {
             public void run() {
                 CasaDeCambio casacambio = new CasaDeCambio();
                 System.out.println("Converting 23 bs into" + casacambio.exchangeBolivianos(10, "$"));
+                casacambio.exchangeEuros(1, "bs")
                 System.out.println("Converting 23 bs into" + casacambio.exchangeDollars(70, "bs"));
+                casacambio.depositarDinero(casacambio.exchangeDollars(70, "bs"));
                 System.out.println("Converting 23 bs into" + casacambio.exchangeEuros(1, "bs"));
+                casacambio.depositarDinero(casacambio.exchangeEuros(1, "bs"));
             }
         });
 
@@ -30,9 +36,12 @@ public class Main {
             public void run() {
                 Banco banco = new Banco();
                 System.out.println("Converting 23 bs into" + banco.exchangeBolivianos(10, "$"));
+                banco.exchangeEuros(1, "bs")
                 System.out.println("Converting 23 bs into" + banco.exchangeDollars(70, "bs"));
+                banco.depositarDinero(banco.exchangeDollars(70, "bs"));
                 System.out.println("Converting 23 bs into" + banco.exchangeEuros(1, "bs"));
-                 }
+                banco.depositarDinero(banco.exchangeEuros(1, "bs"));
+            }
         });
 
 
@@ -40,6 +49,7 @@ public class Main {
         cc.start();
         banco.start();
         Thread.sleep(2000);
+        CuentaBancaria.getInstance().printSaldoCuenta();;
     }
 
 }
