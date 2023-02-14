@@ -36,10 +36,6 @@ public class Main {
         });
 
 
-
-
-
-
         lc.start();
         cc.start();
         banco.start();

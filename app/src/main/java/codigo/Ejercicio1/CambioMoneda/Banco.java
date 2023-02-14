@@ -14,4 +14,8 @@ public class Banco {
     public double exchangeEuros(int amount, String type){
         return Empresa.getCambio().convertToEuro(amount, type);
     }
+
+    public void depositarDinero(double amount){
+        CuentaBancaria.getInstance().depositarDinero(amount);
+    }
 }
