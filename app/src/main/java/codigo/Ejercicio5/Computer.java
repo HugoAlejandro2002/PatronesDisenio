@@ -63,10 +63,10 @@ public  class Computer {
 
     public void showData(){
         System.out.println("monitor : "+monitor);
+        System.out.println("teclado : "+teclado);
         System.out.println("mouse : "+mouse);
         System.out.println("memoria : "+memoria);
         System.out.println("procesador : "+procesador);
         System.out.println("video : "+video);
-        System.out.println("teclado : "+teclado);
     }
 }

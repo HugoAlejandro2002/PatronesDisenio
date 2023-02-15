@@ -1,8 +1,6 @@
 package codigo.Ejercicio5;
 
 
-
-
 public class Dueno {
     private ComputerBuilder computerBuilder;
 
