@@ -1,10 +1,10 @@
-package codigo.State.Ejericio10;
+package codigo.State.Ejercicio10;
 
-public class MemoriaRam {
+public class CPU {
 
     private int consumo;
 
-    public MemoriaRam(int consumo) {
+    public CPU(int consumo) {
 
         this.consumo = consumo;
 
@@ -19,9 +19,10 @@ public class MemoriaRam {
 
     public void showInfo() {
 
-        System.out.println("Estado de la memoria RAM: ");
-        System.out.println("Consumo de la memoria: " + consumo);       
+        System.out.println("------------Estado de la CPU :------------- ");
+        System.out.println("Consumo de la CPU: " + consumo);        
         System.out.println();
+
 
     }
 }

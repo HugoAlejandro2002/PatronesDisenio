@@ -1,4 +1,4 @@
-package codigo.State.Ejericio10;
+package codigo.State.Ejercicio10;
 
 
 public interface IStateComputadora {
