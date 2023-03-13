@@ -4,7 +4,7 @@ public class Editor {
     private Archivo archivo;
 
     public void setMemento(Archivo archivo){
-        System.out.println("DOCUMENTO LISTO PARA SER GUARDADO");
+        System.out.println("Saving File");
         this.archivo = archivo;
     }
 

@@ -19,16 +19,16 @@ public class Administrativo extends Persona {
 
     @Override
     public void messageReceived(String msg) {
-        System.out.println("---------------------------------------");
+        System.out.println();
         this.show();
-        System.out.println("MENSAJE RECIBIDO:" );
+        System.out.print("recibido> " );
         System.out.println(msg);
         
     }
 
     @Override
     public void send(String msg, String indicador) {
-        System.out.println("-------------------------ENVIANDO MENSAJE----------------------------");
+        System.out.println();
        this.show();
        this.getChat().send(msg, this);
     }

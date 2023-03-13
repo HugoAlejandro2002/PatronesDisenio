@@ -3,50 +3,50 @@ package codigo.ExamenFilaA.Ejercicio1;
 
 public class Main {
     public static void main(String[] args) {
-        Backups b = new Backups();
-        Editor w = new Editor();
+        Backups backup = new Backups();
+        Editor writer = new Editor();
 
         Archivo a = new Archivo();
         a.setTitulo("hola");
 
-        a.addOracion("buenas");
-        w.setMemento(a);
+        a.addOracion("hola");
+        writer.setMemento(a);
 
-        b.addNuevaVersion(w.createMemento());
+        backup.addNuevaVersion(writer.createMemento());
 
-        a.addOracion("noches");
-        w.setMemento(a);
+        a.addOracion("hola");
+        writer.setMemento(a);
 
-        b.addNuevaVersion(w.createMemento());
+        backup.addNuevaVersion(writer.createMemento());
 
-        a.addOracion("mi");
-        w.setMemento(a);
+        a.addOracion("no");
+        writer.setMemento(a);
 
-        b.addNuevaVersion(w.createMemento());
+        backup.addNuevaVersion(writer.createMemento());
 
-        a.addOracion("amor");
-        w.setMemento(a);
+        a.addOracion("siiiii");
+        writer.setMemento(a);
 
-        b.addNuevaVersion(w.createMemento());
+        backup.addNuevaVersion(writer.createMemento());
 
-        a = w.recuperarVersion(b.getVersionAnterior());
+        a = writer.recuperarVersion(backup.getVersionAnterior());
         a.show();
-        a = w.recuperarVersion(b.getVersionAnterior());
+        a = writer.recuperarVersion(backup.getVersionAnterior());
         a.show();
-        a = w.recuperarVersion(b.getVersionAnterior());
+        a = writer.recuperarVersion(backup.getVersionAnterior());
         a.show();
-        a = w.recuperarVersion(b.getVersionAnterior());
+        a = writer.recuperarVersion(backup.getVersionAnterior());
         a.show();
-        a = w.recuperarVersion(b.getVersionAnterior());
+        a = writer.recuperarVersion(backup.getVersionAnterior());
         a.show();
 
-        a = w.recuperarVersion(b.getVersionSiguiente());
+        a = writer.recuperarVersion(backup.getVersionSiguiente());
         a.show();
-        a = w.recuperarVersion(b.getVersionSiguiente());
+        a = writer.recuperarVersion(backup.getVersionSiguiente());
         a.show();
-        a = w.recuperarVersion(b.getVersionSiguiente());
+        a = writer.recuperarVersion(backup.getVersionSiguiente());
         a.show();
-        a = w.recuperarVersion(b.getVersionSiguiente());
+        a = writer.recuperarVersion(backup.getVersionSiguiente());
         a.show();
         
     }

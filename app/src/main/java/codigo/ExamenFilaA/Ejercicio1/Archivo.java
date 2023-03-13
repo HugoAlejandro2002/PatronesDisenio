@@ -32,7 +32,7 @@ public class Archivo {
     }
 
     public void show(){
-        System.out.println("--------------------------------");
+        System.out.println("");
         for(String aux: oraciones){
             System.out.println(aux);
         }

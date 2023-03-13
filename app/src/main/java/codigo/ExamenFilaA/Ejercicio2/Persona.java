@@ -62,8 +62,8 @@ public abstract class Persona {
     }
 
     public void show(){
-        System.out.println("Nombre: "+nombre);
-        System.out.println("Tipo: "+tipo);
+        System.out.print("Nombre: "+nombre);
+        System.out.println(" de Tipo: "+tipo);
     }
     public String getTipo() {
         return tipo;
